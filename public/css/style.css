@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  background:#34495e;
+}
+
+p{
+  font-size : 50px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.memes{
+  width: 80%;
+  height: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.memes img{
+  height: 200px;
+  width: auto;
+  margin: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.memes img:hover{
+  transform: rotate(-7deg)
+            scale(1.09);
+}
+
+@media screen and (max-width : 900px) {
+  p{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width : 700px) {
+  p{
+    font-size: 25px;
+  }
+  .memes{
+    width: 100%;
+    justify-content: center;
+  }
+  .memes img{
+    height:140px;
+  }
+}
+
+@media screen and (max-width : 330px) {
+  .memes img{
+    height: 100px;
+  }
+}

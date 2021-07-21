@@ -1,0 +1,12 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  user-select: none;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #34495e;
+}
+.description {
+  padding: 10px;
+}
+.target{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding : 5px 5px 5px 5px;
+  margin-top: -100px;
+}
+
+.moveable-origin {
+  display: none;
+}
+
+.done{
+  display: none;
+}
+
+.editor{
+  height: 100%;
+  width: auto;
+  min-width: 350px;
+  background-color: #919D90;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 10px 0 10px;
+}
+
+.image{
+  overflow: hidden;
+  height: 300px;
+}
+
+.image img{
+  height: 300px;
+}
+
+.main-menu {
+  width: 100%;
+  height: 60px;
+  background-color: #576056;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.text-tab {
+  width: 100%;
+  height: 50px;
+  background-color: #758173;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0px; /*initial state of text tab*/
+  transition: bottom 0.3s ease;
+  z-index: 1;
+}
+
+.text-tab-active{
+  bottom : 60px; /*active state of text tab*/
+}
+
+
+.font-size-subtab,.color-subtab{
+  width: 100%;
+  height: 45px;
+  background-color: #7E9782;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0px; /*initial state of font-size and color subtab*/
+  color: #e2ece2;
+  z-index: 0;
+  transition: bottom 0.3s ease;
+}
+
+.sub-tabs-active{
+  bottom : 110px; /*active state of font-size and color subtab*/
+}
+
+.font-size-subtab .amount{
+  appearance: none;
+  width: 220px;
+  height: 3px;
+  border-radius: 10px;
+  background: #F77964;
+}
+
+.font-size-subtab .amount::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #FA7161;
+  border-radius : 50%;
+  position: relative;
+}
+
+.color-subtab span{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.main-menu img, .text-tab img, .font-size-subtab img, .color-subtab {
+  cursor : pointer;
+}
