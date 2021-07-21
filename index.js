@@ -1,5 +1,6 @@
 let express = require('express')
 let app = express()
+let port = process.env.PORT || 3000
 
 app.set('view engine', 'pug')
 app.use(express.static(__dirname + '/' + 'public/'))
@@ -19,4 +20,4 @@ app.get('/editor/', (req, res) => {
     })
 })
 
-app.listen(3000)
+app.listen(port)
