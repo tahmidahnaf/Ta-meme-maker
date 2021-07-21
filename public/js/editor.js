@@ -1,4 +1,5 @@
 let memeCanvas = document.querySelector('.image')
+let template = document.querySelector('.image img')
 let targets = Object.values(document.querySelectorAll('.target'))
 let templateButton = document.querySelector('.template')
 let textButton = document.querySelector('.text')
@@ -13,6 +14,11 @@ let fontSizeSubtab = document.querySelector('.font-size-subtab')
 let sizeAmount = document.querySelector('.font-size-subtab input')
 let colorSubTab = document.querySelector('.color-subtab')
 let colorSubTabColors = document.querySelectorAll('.color-subtab span')
+
+
+// disable the default dragging behavior of image
+
+template.addEventListener('dragstart', (e) => e.preventDefault())
 
 // apply the movement bahivour in the texts
 
