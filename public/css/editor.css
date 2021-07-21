@@ -20,7 +20,7 @@ body {
   padding: 10px;
 }
 .target{
-  width: 100px;
+  width: auto;
   height: 100px;
   text-align: center;
   color: #333;
